@@ -117,6 +117,14 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, list_of_holidays|
     puts season.to_s.capitalize
     
+    list_of_holidays.each do |holiday, supplies|
+      puts holiday.to_s
+      supplies.each do |i|
+        puts i
+      end
+    end
+    
+    
   end
 
   
